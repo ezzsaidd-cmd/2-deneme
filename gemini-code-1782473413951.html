@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern & Minimalist Dijital Ajans</title>
+    <style>
+        /* Genel Ayarlar */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+        }
+        
+        body {
+            background-color: #fafafa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Navigasyon */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 30px 10%;
+            background-color: #ffffff;
+            border-bottom: 1px solid #eaeaea;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            color: #111;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #555;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #000;
+        }
+
+        /* Hero (Ana) Bölümü */
+        .hero {
+            text-align: center;
+            padding: 120px 20px;
+            background-color: #ffffff;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: #111;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: #666;
+            max-width: 600px;
+            margin: 0 auto 40px auto;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 15px 35px;
+            background-color: #111;
+            color: #fff;
+            text-decoration: none;
+            font-size: 14px;
+            letter-spacing: 1px;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #444;
+        }
+
+        /* Hizmetler Bölümü */
+        .services {
+            display: flex;
+            justify-content: space-between;
+            gap: 40px;
+            padding: 80px 10%;
+            background-color: #fafafa;
+        }
+
+        .service-box {
+            flex: 1;
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 8px;
+            border: 1px solid #eaeaea;
+            text-align: center;
+        }
+
+        .service-box h3 {
+            font-size: 20px;
+            margin-bottom: 15px;
+            color: #111;
+        }
+
+        .service-box p {
+            color: #666;
+            font-size: 15px;
+        }
+
+        /* Alt Bilgi (Footer) */
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: #111;
+            color: #fff;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Üst Menü -->
+    <header>
+        <div class="logo">Marka Adı.</div>
+        <nav>
+            <ul>
+                <li><a href="#hakkimizda">Hakkımızda</a></li>
+                <li><a href="#hizmetler">Hizmetler</a></li>
+                <li><a href="#iletisim">İletişim</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Ana Karşılama Ekranı -->
+    <section class="hero">
+        <h1>Dijital Dünyada Yerinizi Alın</h1>
+        <p>Sade, şık ve amaca yönelik tasarımlarla markanızı bir adım öteye taşıyoruz. Karmaşadan uzak, tamamen sizin hikayenize odaklı çözümler üretiyoruz.</p>
+        <a href="#iletisim" class="btn">Bizimle İletişime Geçin</a>
+    </section>
+
+    <!-- Hizmetler Kutuları -->
+    <section id="hizmetler" class="services">
+        <div class="service-box">
+            <h3>Web Tasarım</h3>
+            <p>Modern ve her cihaza uyumlu altyapılarla markanıza özel vitrinler oluşturuyoruz.</p>
+        </div>
+        <div class="service-box">
+            <h3>İçerik Yönetimi</h3>
+            <p>Siz işinize odaklanırken, sitenizin güncelliğini ve teknik altyapısını biz yönetiyoruz.</p>
+        </div>
+        <div class="service-box">
+            <h3>Marka Kimliği</h3>
+            <p>Müşterilerinizin aklında kalacak, vizyonunuzu yansıtan kurumsal kimlik tasarımları.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2026 Marka Adı. Tüm hakları saklıdır.
+    </footer>
+
+</body>
+</html>
