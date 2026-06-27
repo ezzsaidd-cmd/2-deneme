@@ -4,13 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cevo Design | Üst Düzey Dijital Ajans</title>
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome İkonları -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
+    <!-- Tasarım (CSS) dosyamızı dışarıdan çağırıyoruz -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    <!-- Üst Menü -->
     <nav class="navbar">
         <div class="container">
             <a href="index.html" class="logo">
@@ -19,7 +23,8 @@
             <ul class="nav-links">
                 <li><a href="index.html" class="active">Ana Sayfa</a></li>
                 <li><a href="hizmetler.html">Hizmetler</a></li>
-                <li><a href="index.html#why-us">Neden Biz?</a></li>
+                <!-- Neden Biz kısmı ana sayfanın aşağısında olduğu için bu link sayfayı aşağı kaydırır -->
+                <li><a href="#why-us">Neden Biz?</a></li>
                 <li><a href="iletisim.html">İletişim</a></li>
             </ul>
             <a href="iletisim.html" class="btn-primary">Projeye Başla</a>
@@ -29,15 +34,17 @@
         </div>
     </nav>
 
+    <!-- Mobil Menü -->
     <div class="mobile-menu">
         <ul>
             <li><a href="index.html">Ana Sayfa</a></li>
             <li><a href="hizmetler.html">Hizmetler</a></li>
-            <li><a href="index.html#why-us">Neden Biz?</a></li>
+            <li><a href="#why-us">Neden Biz?</a></li>
             <li><a href="iletisim.html">İletişim</a></li>
         </ul>
     </div>
 
+    <!-- 1. BÖLÜM: Ana Karşılama (Hero) ve Sağdaki Görsel -->
     <section id="home" class="hero">
         <div class="container">
             <div class="hero-content">
@@ -65,8 +72,10 @@
                     </div>
                 </div>
             </div>
+            
             <div class="hero-image">
                 <div class="hero-image-wrapper">
+                    <!-- Profesyonel ajans ortamı görseli -->
                     <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&h=700&fit=crop" alt="Cevo Design Studio">
                     <div class="floating-card card-1">
                         <i class="fas fa-award"></i>
@@ -81,6 +90,7 @@
         </div>
     </section>
 
+    <!-- 2. BÖLÜM: Hizmetlerin Önizlemesi ve Kartlar -->
     <section id="services" class="services-preview">
         <div class="container">
             <div class="section-header">
@@ -89,101 +99,96 @@
                 <p>Markanızın dijital dünyada ihtiyaç duyduğu tüm hizmetleri tek çatı altında, en yüksek kaliteyle sunuyoruz.</p>
             </div>
             <div class="services-grid">
+                
                 <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-laptop-code"></i>
-                    </div>
+                    <div class="service-icon"><i class="fas fa-laptop-code"></i></div>
                     <h3>Web Geliştirme</h3>
                     <p>Modern, hızlı ve SEO uyumlu kurumsal web siteleri ile dijital vitrininizi oluşturuyoruz.</p>
                     <a href="hizmetler.html" class="learn-more">Detaylı Bilgi <i class="fas fa-arrow-right"></i></a>
                 </div>
+                
                 <div class="service-card featured">
-                    <div class="service-icon">
-                        <i class="fas fa-palette"></i>
-                    </div>
+                    <div class="service-icon"><i class="fas fa-palette"></i></div>
                     <h3>Kurumsal Kimlik</h3>
                     <p>Logodan renk paletine kadar, şirketinizin vizyonunu yansıtacak minimalist ve güçlü tasarımlar.</p>
                     <a href="hizmetler.html" class="learn-more" style="color:var(--white)">Detaylı Bilgi <i class="fas fa-arrow-right"></i></a>
                 </div>
+                
                 <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-mobile-alt"></i>
-                    </div>
+                    <div class="service-icon"><i class="fas fa-mobile-alt"></i></div>
                     <h3>UI / UX Tasarım</h3>
                     <p>Kullanıcı deneyimini merkeze alan, her cihazda kusursuz çalışan modern arayüzler tasarlıyoruz.</p>
                     <a href="hizmetler.html" class="learn-more">Detaylı Bilgi <i class="fas fa-arrow-right"></i></a>
                 </div>
+                
                 <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-hashtag"></i>
-                    </div>
+                    <div class="service-icon"><i class="fas fa-hashtag"></i></div>
                     <h3>Sosyal Medya</h3>
                     <p>Akılda kalıcı içerikler ve stratejik yönetim ile markanızın dijital etkileşimini artırıyoruz.</p>
                     <a href="hizmetler.html" class="learn-more">Detaylı Bilgi <i class="fas fa-arrow-right"></i></a>
                 </div>
+                
                 <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-search-dollar"></i>
-                    </div>
+                    <div class="service-icon"><i class="fas fa-search-dollar"></i></div>
                     <h3>SEO & Pazarlama</h3>
                     <p>Arama motorlarında üst sıralara çıkarak doğru hedef kitleye ulaşmanızı sağlıyoruz.</p>
                     <a href="hizmetler.html" class="learn-more">Detaylı Bilgi <i class="fas fa-arrow-right"></i></a>
                 </div>
+                
                 <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-server"></i>
-                    </div>
+                    <div class="service-icon"><i class="fas fa-server"></i></div>
                     <h3>Sistem & Bakım</h3>
                     <p>Sunucu yönetimi, hız optimizasyonu ve aylık düzenli bakım hizmetleri sunuyoruz.</p>
                     <a href="hizmetler.html" class="learn-more">Detaylı Bilgi <i class="fas fa-arrow-right"></i></a>
                 </div>
+
             </div>
         </div>
     </section>
 
+    <!-- 3. BÖLÜM: Neden Biz? (Özellikler ve Fotoğraf) -->
     <section id="why-us" class="why-us">
         <div class="container">
             <div class="why-us-content">
                 <span class="section-badge">NEDEN CEVO DESIGN?</span>
                 <h2>Bizimle Çalışmanız İçin Nedenler</h2>
                 <div class="features-grid">
+                    
                     <div class="feature">
-                        <div class="feature-icon">
-                            <i class="fas fa-code"></i>
-                        </div>
+                        <div class="feature-icon"><i class="fas fa-code"></i></div>
                         <h4>Temiz Kod Yapısı</h4>
                         <p>Hızlı yüklenen, gereksiz kodlardan arındırılmış modern altyapı.</p>
                     </div>
+                    
                     <div class="feature">
-                        <div class="feature-icon">
-                            <i class="fas fa-paint-brush"></i>
-                        </div>
+                        <div class="feature-icon"><i class="fas fa-paint-brush"></i></div>
                         <h4>Özgün Tasarım</h4>
                         <p>Şablonlardan uzak, tamamen markanıza özel premium çizimler.</p>
                     </div>
+                    
                     <div class="feature">
-                        <div class="feature-icon">
-                            <i class="fas fa-headset"></i>
-                        </div>
+                        <div class="feature-icon"><i class="fas fa-headset"></i></div>
                         <h4>Sürekli Destek</h4>
                         <p>Proje teslimi sonrasında da yanınızda olan çözüm odaklı yaklaşım.</p>
                     </div>
+                    
                     <div class="feature">
-                        <div class="feature-icon">
-                            <i class="fas fa-rocket"></i>
-                        </div>
+                        <div class="feature-icon"><i class="fas fa-rocket"></i></div>
                         <h4>Hızlı Teslimat</h4>
                         <p>Kaliteden ödün vermeden belirlenen takvime sadık kalıyoruz.</p>
                     </div>
+
                 </div>
             </div>
+            
             <div class="why-us-image">
                 <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&h=800&fit=crop" alt="Cevo Design Ekibi">
             </div>
         </div>
     </section>
 
-    <footer class="footer">
+    <!-- 4. BÖLÜM: Alt Bilgi (Footer) -->
+    <footer id="contact" class="footer">
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-brand">
@@ -201,7 +206,7 @@
                     <ul>
                         <li><a href="index.html">Ana Sayfa</a></li>
                         <li><a href="hizmetler.html">Hizmetlerimiz</a></li>
-                        <li><a href="iletisim.html">İletişim</a></li>
+                        <li><a href="#why-us">Hakkımızda</a></li>
                     </ul>
                 </div>
                 <div class="footer-links">
@@ -224,8 +229,9 @@
         </div>
     </footer>
 
+    <!-- ETKİLEŞİM VE ANİMASYON SCRİPTLERİ -->
     <script>
-        // Mobile Menu Toggle
+        // Mobil Menü Açma/Kapama İşlemi
         const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
         const mobileMenu = document.querySelector('.mobile-menu');
 
@@ -237,6 +243,7 @@
                 icon.classList.toggle('fa-times');
             });
 
+            // Mobil menüdeki linklere tıklanınca menüyü kapat
             mobileMenu.querySelectorAll('a').forEach(link => {
                 link.addEventListener('click', () => {
                     mobileMenu.classList.remove('active');
@@ -246,7 +253,7 @@
             });
         }
 
-        // Navbar Scroll Effect
+        // Sayfa Aşağı Kaydırıldığında Üst Menünün Küçülmesi (Scroll Effect)
         const navbar = document.querySelector('.navbar');
         window.addEventListener('scroll', () => {
             if (window.scrollY > 50) {
@@ -256,7 +263,7 @@
             }
         });
 
-        // Ekranda Belirme Animasyonu (Scroll Animation)
+        // Öğelerin Ekrana Girince Belirmesi Animasyonu (Scroll Animation)
         const observerOptions = {
             threshold: 0.1,
             rootMargin: '0px 0px -50px 0px'
@@ -270,6 +277,7 @@
             });
         }, observerOptions);
 
+        // Animasyon uygulanacak sınıfları seçip gözlemciye ekliyoruz
         document.querySelectorAll('.service-card, .feature, .hero-content, .hero-image').forEach(el => {
             el.style.opacity = '0';
             el.style.transform = 'translateY(30px)';
