@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hizmetlerimiz | Cevo Design</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome İkonları -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Ortak CSS Dosyamız -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Bu sayfaya özel tasarımlar (Hizmet detay satırları) -->
+    <style>
+        .services-content {
+            padding: 100px 0;
+            background-color: var(--white);
+        }
+        
+        .service-detail {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+            margin-bottom: 100px;
+        }
+
+        /* Çapraz (Zikzak) Görünüm İçin Çift Sayılı Satırları Ters Çeviriyoruz */
+        .service-detail:nth-child(even) {
+            direction: rtl;
+        }
+        .service-detail:nth-child(even) > * {
+            direction: ltr;
+        }
+
+        .service-text h2 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 36px;
+            color: var(--secondary);
+            margin-bottom: 20px;
+            letter-spacing: -0.5px;
+        }
+
+        .service-text p {
+            font-size: 16px;
+            color: var(--gray);
+            line-height: 1.8;
+            margin-bottom: 30px;
+        }
+
+        .service-list {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-bottom: 35px;
+        }
+
+        .service-list li {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 15px;
+            color: var(--dark);
+            font-weight: 500;
+        }
+
+        .service-list li i {
+            color: var(--primary);
+            font-size: 18px;
+        }
+
+        .service-img {
+            width: 100%;
+            border-radius: 20px;
+            box-shadow: var(--shadow-lg);
+            transition: transform 0.4s ease;
+        }
+        
+        .service-img:hover {
+            transform: translateY(-10px);
+        }
+
+        /* İletişim Yönlendirme (CTA) Kutusu */
+        .cta-banner {
+            background: var(--gradient);
+            border-radius: 20px;
+            padding: 60px 40px;
+            text-align: center;
+            color: var(--white);
+            margin: 60px 0;
+            box-shadow: var(--shadow);
+        }
+
+        .cta-banner h2 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 36px;
+            margin-bottom: 15px;
+        }
+
+        .cta-banner p {
+            font-size: 18px;
+            opacity: 0.9;
+            margin-bottom: 30px;
+        }
+
+        @media (max-width: 768px) {
+            .service-detail {
+                grid-template-columns: 1fr;
+                gap: 40px;
+                margin-bottom: 60px;
+            }
+            .service-detail:nth-child(even) { direction: ltr; }
+            .service-detail img { order: -1; }
+            .cta-banner { padding: 40px 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Üst Menü -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="Logo transparent_2.png" alt="Cevo Design" class="logo-img">
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Ana Sayfa</a></li>
+                <li><a href="hizmetler.html" class="active">Hizmetler</a></li>
+                <li><a href="iletisim.html">İletişim</a></li>
+            </ul>
+            <a href="iletisim.html" class="btn-primary">Projeye Başla</a>
+        </div>
+    </nav>
+
+    <!-- Sayfa Başlığı (Page Header) -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Uzmanlık Alanlarımız</h1>
+            <p>Modern teknoloji ve minimalist tasarımla markanızı dijitalde büyütüyoruz.</p>
+        </div>
+    </section>
+
+    <!-- Hizmet İçerikleri -->
+    <section class="services-content">
+        <div class="container">
+            
+            <!-- Hizmet 1 -->
+            <div class="service-detail">
+                <div class="service-text">
+                    <h2>Web Tasarım & Geliştirme</h2>
+                    <p>Markanızın vizyonunu yansıtan, modern, hızlı ve tüm cihazlarla (mobil, tablet, masaüstü) tam uyumlu çalışan özel web siteleri kodluyoruz. Karmaşık yapılardan uzak, temiz bir kodlama ile kusursuz bir kullanıcı deneyimi sunuyoruz.</p>
+                    <ul class="service-list">
+                        <li><i class="fas fa-check-circle"></i> Özel Kurumsal Web Siteleri</li>
+                        <li><i class="fas fa-check-circle"></i> E-Ticaret ve Satış Platformları</li>
+                        <li><i class="fas fa-check-circle"></i> Mobil Uyumlu (Responsive) Tasarım</li>
+                        <li><i class="fas fa-check-circle"></i> Yüksek Hız ve Performans Optimizasyonu</li>
+                    </ul>
+                    <a href="iletisim.html" class="btn-primary">Teklif Alın <i class="fas fa-arrow-right" style="margin-left: 5px;"></i></a>
+                </div>
+                <!-- Sektöre uygun kaliteli bir Unsplash görseli -->
+                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&h=600&fit=crop" alt="Web Tasarım Geliştirme" class="service-img">
+            </div>
+
+            <!-- Hizmet 2 -->
+            <div class="service-detail">
+                <div class="service-text">
+                    <h2>Kurumsal Kimlik & Markalaşma</h2>
+                    <p>Müşterilerinizin aklında yer edecek, sade ama iddialı bir marka kimliği yaratıyoruz. Yeni kurulacak işletmeler veya dijital dönüşüm geçirecek markalar için A'dan Z'ye marka dili oluşturuyoruz.</p>
+                    <ul class="service-list">
+                        <li><i class="fas fa-check-circle"></i> Minimalist ve Modern Logo Tasarımı</li>
+                        <li><i class="fas fa-check-circle"></i> Marka Renk Paleti ve Tipografi Belirleme</li>
+                        <li><i class="fas fa-check-circle"></i> Sosyal Medya Görsel Şablonları</li>
+                        <li><i class="fas fa-check-circle"></i> Kurumsal Sunum ve İnfografik Tasarımları</li>
+                    </ul>
+                    <a href="iletisim.html" class="btn-primary">Teklif Alın <i class="fas fa-arrow-right" style="margin-left: 5px;"></i></a>
+                </div>
+                <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&h=600&fit=crop" alt="Kurumsal Kimlik Tasarımı" class="service-img">
+            </div>
+
+            <!-- Hizmet 3 -->
+            <div class="service-detail">
+                <div class="service-text">
+                    <h2>UI / UX Tasarım</h2>
+                    <p>Bir sitenin sadece güzel görünmesi yetmez, aynı zamanda kolay kullanılması gerekir. Ziyaretçilerinizin sitenizde veya uygulamanızda kaybolmadan aradığını bulmasını sağlayan, satış dönüşümlerini artıran arayüzler tasarlıyoruz.</p>
+                    <ul class="service-list">
+                        <li><i class="fas fa-check-circle"></i> Kullanıcı Deneyimi (UX) Araştırmaları</li>
+                        <li><i class="fas fa-check-circle"></i> Modern Kullanıcı Arayüzü (UI) Tasarımı</li>
+                        <li><i class="fas fa-check-circle"></i> Wireframe ve Tıklanabilir Prototip</li>
+                        <li><i class="fas fa-check-circle"></i> A/B Testleri ve Dönüşüm Optimizasyonu</li>
+                    </ul>
+                    <a href="iletisim.html" class="btn-primary">Teklif Alın <i class="fas fa-arrow-right" style="margin-left: 5px;"></i></a>
+                </div>
+                <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=800&h=600&fit=crop" alt="UI UX Tasarımı" class="service-img">
+            </div>
+
+            <!-- Sayfa Sonu Yönlendirmesi -->
+            <div class="cta-banner">
+                <h2>Fikrinizi Hayata Geçirelim</h2>
+                <p>Projelerinizi Cevo Design kalitesiyle gerçeğe dönüştürmek için hemen uzman ekibimizle görüşün.</p>
+                <a href="iletisim.html" class="btn-secondary" style="background-color: transparent; border-color: white; color: white;">Bize Ulaşın</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <img src="Logo transparent_2.png" alt="Cevo Design" style="height: 40px; background-color: var(--secondary); padding: 4px; border-radius: 6px;">
+                    <p style="margin-top:20px;">Modern dijital dünyada markanızı en güçlü şekilde temsil edecek teknolojik ve estetik altyapıları inşa ediyoruz.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Menü</h4>
+                    <ul>
+                        <li><a href="index.html">Ana Sayfa</a></li>
+                        <li><a href="hizmetler.html">Hizmetlerimiz</a></li>
+                        <li><a href="iletisim.html">İletişim</a></li>
+                    </ul>
+                </div>
+            </div>
+            <p style="text-align: center; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px;">&copy; 2026 Cevo Design.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
